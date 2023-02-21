@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         /*
@@ -25,7 +27,24 @@ public class Main {
              System.out.println("I love cats");
             System.out.println("I hate cats");
         */
+/*
 
+        for(int i=0; i<=10; i++){
+            System.out.println(i * 3);
+        }
+        System.out.println();
+
+
+        for(int i=10; i>=0; i--){
+            System.out.println(i * 3);
+        }
+
+ */
+       /* String names[] = {"Hello", "hi" };
+        System.out.println(Arrays.toString(names));
 
         }
+
+        */
+    }
 }
