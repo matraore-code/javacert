@@ -135,10 +135,84 @@ public class Main {
         System.out.println(result);
 
 
- */
+
         for (int i = 0; i < args.length; i++) {
             System.out.println(args[i]);
         }
+
+
+
+        int i = 5;
+        int j = 6;
+        if (i == j) {
+            System.out.println(" Les 2 nombres sont égaux");
+        }
+        if (i != j) {
+            System.out.println(" Les 2 nombres ne sont pas égaux");
+        }
+
+
+        String i = "Hello";
+        String j = "Hello";
+        if (i == j) {
+            System.out.println("Sont égaux");
+        }
+        if (i != j) {
+            System.out.println(" ne sont pas égaux");
+        }
+
+
+
+        String str1 = new String("Hello");
+        String str2 = new String("Hello");;
+        if (str1.equals(str2)) {
+            System.out.println("Sont égaux");
+        }
+
+
+
+        int i = 5;
+        int j = 6;
+        int k = 3;
+        if (i > j  && i < k) {
+            System.out.println("Condition met");
+        } else {
+            System.out.println("Condition not met");
+        }
+
+
+
+
+        int i = 5;
+        int j = 6;
+        int k = 3;
+        if (i > j ||  i < k) {
+            System.out.println("Condition met");
+        } else {
+            System.out.println("Condition not met");
+        }
+
+
+
+        char c = 'e';
+        String str = "ehoooeééééeeee";
+        for (int i = 0; i<str.length(); i++) {
+            if (c == str.charAt(i)) {
+                System.out.println("find :)");
+            }
+        }
+
+
+
+        for (int i = 0; i<=20; i++) {
+            if (i%2 == 0) {
+                System.out.println(i);
+            }
+        }
+
+ */
+
+
 
 
     }
