@@ -1,7 +1,7 @@
 package com.matraore.email;
 
 public class EmailValidator {
-    public static void main(String args) {
+     public static void main(String args) {
         int j = 0;
         for(int i= 0; i < args.length(); i++) {
             if (args.charAt(i) == '@') {

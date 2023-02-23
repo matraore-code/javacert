@@ -6,14 +6,111 @@ import java.awt.Point;
 import java.awt.Color;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.logging.Level;
 
 public class Main {
 
-     static  String bar = "hello";
-    public static  String foo = "bar";
+    // static  String bar = "hello";
+   public static  String foo = "bar";
+
+   private static int add(int n1, int n2) {
+       int result = n2 + n1;
+       return result;
+   }
+
+   private static void printBrand() {
+       System.out.println("Mattraore");
+   }
+
+   private static double calculateRentalYield(double rentalIncome, double propertyPrice) {
+       double annualRentalIncome = rentalIncome * 12;
+       double rentalYield = (annualRentalIncome / propertyPrice) * 100;
+       return rentalYield;
+
+   }
+
+   private static int getNegated(int n) {
+       return n * -1;
+   }
+
+
+   private static boolean isSame(int i, int j) {
+       if (i == j){
+           return true;
+       }
+       else {
+           return false;
+       }
+   }
+    private static void getLager(int i, int j) {
+        if (i > j){
+            System.out.println("The first number is large");
+        }
+        else if (i < j){
+            System.out.println("The second number is large");
+        } else {
+            System.out.println("The numbers are equal");
+        }
+    }
+
+    private static void capitalize(String str) {
+        char c = str.charAt(0);
+        c = Character.toUpperCase(c);
+        str = c + str.substring(1);
+        System.out.println(str);
+
+    }
+
+    private static int getLength(String [] str) {
+       int length = str.length;
+       return length;
+    }
+
+
+    private static int getNumberOfWord(String sentence) {
+       String[] str = sentence.split(" ");
+       int l = getLength(str);
+       return l;
+
+    }
+
     public static void main(String[] args) {
-        String foo = "bar";
-        EmailValidator.main("maamadougmal@.com");
+
+       /*
+        System.out.println(
+                "Your rental yield is: " + calculateRentalYield(1300, 250000)
+        );
+
+
+        // System.out.println(getNegated(5));
+        //System.out.println(isSame(10, 8));
+        //getLager(4,6);
+        //capitalize("mamadoumoctar");
+        String[] a = {"a", "b", "c", "d"};
+        System.out.println(getLength(a));
+
+
+
+
+        String str = "The second number is larger and is positive";
+        System.out.println("The sentence contains " + getNumberOfWord(str) + " words");
+
+        */
+
+
+
+
+
+
+
+
+
+        /*int result1 = add(10, 20);
+        System.out.println(result1);
+        printBrand();*/
+
+       //String foo = "bar";
+        //EmailValidator.main("maamadougmal@.com");
 
 
 
