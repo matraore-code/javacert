@@ -1,10 +1,22 @@
+package com.matraore;
+
+import com.matraore.email.EmailValidator;
+
 import java.awt.Point;
 import java.awt.Color;
 import java.util.Arrays;
 import java.util.Date;
 
 public class Main {
+
+     static  String bar = "hello";
+    public static  String foo = "bar";
     public static void main(String[] args) {
+        String foo = "bar";
+        EmailValidator.main("maamadougmal@.com");
+
+
+
         /*
         Exercise 1 : Create a class called Compile.java with the following code
         package com.amigoscode;
@@ -224,7 +236,10 @@ public class Main {
 
  */
 
-        String name ="Moctar";
+       // String name ="Moctar";
+
+
+
 
 
     }
