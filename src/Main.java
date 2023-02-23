@@ -1,4 +1,7 @@
+import java.awt.Point;
+import java.awt.Color;
 import java.util.Arrays;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -210,9 +213,18 @@ public class Main {
             }
         }
 
+
+
+        Point point = new Point();
+        Color color = new Color(0xAF2121);
+
+
+        Date date = new Date();
+        java.sql.Date date1 = new java.sql.Date(1);
+
  */
 
-
+        String name ="Moctar";
 
 
     }
