@@ -74,7 +74,65 @@ public class Main {
 
     }
 
+    private static void reverseString(String str) {
+       for(int i = str.length()-1; i>=0; i--) {
+           System.out.print(str.charAt(i));
+       }
+    }
+    private static void findLongestString(String[] input) {
+       if (input.length != 0) {
+           int k=0;
+           for (int i = 0; i < input.length-1; i++) {
+               if(input[i].length() >= input[i+1].length() && k < input[i].length()) {
+                   k = input[i].length();
+               } else if(input[i].length() < input[i+1].length() && k < input[i+1].length()) {
+                   k = input[i+1].length();
+               }
+           }
+           for (int i = 0; i < input.length; i++) {
+               if(input[i].length() == k) {
+                   System.out.println(input[i]);
+               }
+           }
+
+       } else {
+           System.out.println("");
+       }
+    }
+
+
     public static void main(String[] args) {
+        //reverseString("ratcoM");
+       // String[] input = {"bingo", "cia", "mo", "ami"};
+        //findLongestString(input);
+
+       /* String name = "Alex";
+        name = "Jamila";
+        System.out.println(name);
+
+        */
+        System.out.println(Gender.FEMALE);
+        System.out.println(Gender.MALE);
+
+
+
+  /*      String input = "   amig os cod e  ";
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) != ' '){
+                int j = 1;
+                if (input.charAt(i) == 'a'){
+                    j++;
+                    char a = input.charAt(i);
+                    System.out.print(Character.toUpperCase(a));
+
+                    continue;
+                }
+                System.out.print(input.charAt(i));
+            }
+        }
+
+   */
+
 
        /*
         System.out.println(
