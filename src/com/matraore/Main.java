@@ -1,6 +1,9 @@
 package com.matraore;
 
 import java.time.*;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.concurrent.SynchronousQueue;
 
 public class Main {
 
@@ -103,11 +106,68 @@ public class Main {
         System.out.println(currentYear - birthYear);
         return -1;
     }
+
+
+    private static void isPrime(int number) {
+       int j = 0;
+       for (int i = 1; i <= number; i++) {
+           if ( number % i == 0) {
+               j+=1;
+           }
+       }
+       if (j == 2) {
+           System.out.println("This number is prime");
+       } else {
+           System.out.println("This number is not prime");
+       }
+    }
     public static void main(String[] args) {
+        System.out.println("***** Joke Generator*****");
+        String number;
+        String[] jokes = {
+                "q. Why did the child component have such great self-esteem? a. Because its parent kept giving it `props`!",
+                "q. How do you comfort a JavaScript bug? a. You console it.",
+                "q. Why do C# and Java developers keep breaking their keyboards? a. Because they use a strongly typed language!",
+                "q. Why do C# and Java developers keep breaking their keyboards? a. Because they use a strongly typed language!",
+                "q. Why did the functional component feel lost? a. Because it didn't know what `state` it was in!",
+                "q. Why was the JavaScript developer sad? a. Because he didn't Node how to Express himself!",
+                "q. Why did the developer go broke? a. Because he used up all his cache!",
+                "q. Why did the React Higher Order Component give up? a. Because it sur-rendered to the prop-aganda!",
+                "When a JavaScript date has gone bad, \"Don't call me, I'll callback you. I promise!",
+                "q. Why did the react class component feel relieved? a. Because it was now off the hook."
+        };
+        do {
+            System.out.println();
+            System.out.println("Want to hear a joke? Yes/No");
+            Scanner scanner = new Scanner(System.in);
+            number = scanner.nextLine();
+            if (number.equals("no")) {
+                break;
+            }
+            Random random = new Random();
+            int randomNumber = random.nextInt(9);
+            System.out.println(jokes[randomNumber]);
+
+        } while (number.equals("yes"));
+
+
 
 
 
 /*
+
+        System.out.println("***** Prime Number Checker *****");
+        System.out.println();
+        System.out.println("Type a number");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        isPrime(number);
+
+
+
+
+
+
        LocalDateTime now = LocalDateTime.now();
         System.out.println(now);
         System.out.println(now.getDayOfYear());
@@ -128,7 +188,7 @@ public class Main {
 
         System.out.println(ZonedDateTime.now());
 
- */
+
 
         LocalDate birthDay = LocalDate.of(
                 1996,
@@ -141,9 +201,16 @@ public class Main {
 
 
 
+        System.out.println("Hello! What is your name?");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        System.out.println("Hello " + input);
+
+ */
+
 
         //reverseString("ratcoM");
-       // String[] input = {"bingo", "cia", "mo", "ami"};
+        // String[] input = {"bingo", "cia", "mo", "ami"};
         //findLongestString(input);
 
        /* String name = "Alex";
@@ -215,7 +282,7 @@ public class Main {
         System.out.println(result1);
         printBrand();*/
 
-       //String foo = "bar";
+        //String foo = "bar";
         //EmailValidator.main("maamadougmal@.com");
 
 
@@ -439,10 +506,7 @@ public class Main {
 
  */
 
-       // String name ="Moctar";
-
-
-
+        // String name ="Moctar";
 
 
     }
