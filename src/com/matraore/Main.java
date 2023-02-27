@@ -1,12 +1,6 @@
 package com.matraore;
 
-import com.matraore.email.EmailValidator;
-
-import java.awt.Point;
-import java.awt.Color;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.logging.Level;
+import java.time.*;
 
 public class Main {
 
@@ -100,8 +94,54 @@ public class Main {
        }
     }
 
+    private static int calculateAge(LocalDate date) {
+        // hint: subtract todays date[year] - date[year]
 
+        int birthYear = date.getYear();
+        int currentYear = LocalDate.now().getYear();
+
+        System.out.println(currentYear - birthYear);
+        return -1;
+    }
     public static void main(String[] args) {
+
+
+
+/*
+       LocalDateTime now = LocalDateTime.now();
+        System.out.println(now);
+        System.out.println(now.getDayOfYear());
+        LocalDate today = LocalDate.now();
+        System.out.println(today);
+        LocalTime hour = LocalTime.now();
+        System.out.println(hour.getHour());
+
+        LocalDateTime badDay = LocalDateTime.of(
+                2005,
+                Month.APRIL,
+                28,
+                10,
+                42,
+                54
+        );
+        System.out.println(badDay);
+
+        System.out.println(ZonedDateTime.now());
+
+ */
+
+        LocalDate birthDay = LocalDate.of(
+                1996,
+                Month.NOVEMBER,
+                29
+        );
+        System.out.println(birthDay);
+        System.out.println(birthDay.plusDays(100));
+        calculateAge(birthDay);
+
+
+
+
         //reverseString("ratcoM");
        // String[] input = {"bingo", "cia", "mo", "ami"};
         //findLongestString(input);
@@ -110,9 +150,17 @@ public class Main {
         name = "Jamila";
         System.out.println(name);
 
-        */
+
         System.out.println(Gender.FEMALE);
         System.out.println(Gender.MALE);
+
+        */
+       /* for (Gender gender : Gender.values()) {
+            System.out.println(gender.name().toLowerCase());
+        }
+
+        */
+
 
 
 
