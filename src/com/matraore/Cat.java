@@ -6,9 +6,9 @@ public class Cat {
 
     private int age;
     private String name;
-    private String color;
+    private Colors color;
 
-    public Cat(int age, String name, String color) {
+    public Cat(int age, String name, Colors color) {
         this.age = age;
         this.name = name;
         this.color = color;
@@ -33,11 +33,11 @@ public class Cat {
         this.name = name;
     }
 
-    public String getColor() {
+    public Colors getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Colors color) {
         this.color = color;
     }
 
